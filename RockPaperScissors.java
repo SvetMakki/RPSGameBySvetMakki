@@ -21,30 +21,30 @@ public class RockPaperScissors {
         } else if (playerMove.equals("s") || playerMove.equals("scissors")) {
             playerMove = SCISSORS;
 
-        }else {
+        } else {
             System.out.println("Invalid Input! Try Again...");
             return;
         }
         Random random = new Random();
         int computerRandomNumber = random.nextInt(4);
         String computerMove = "";
-        switch (computerRandomNumber){
+        switch (computerRandomNumber) {
             case 1:
                 computerMove = ROCK;
-            break;
+                break;
 
             case 2:
                 computerMove = PAPER;
-            break;
+                break;
 
             case 3:
                 computerMove = SCISSORS;
-            break;
+                break;
 
         }
         System.out.printf("Your Opponent choose: %s%n", computerMove);
 
-        if (playerMove.equals(ROCK) && computerMove.equals(SCISSORS) || playerMove.equals(SCISSORS) && computerMove.equals(PAPER) 
+        if (playerMove.equals(ROCK) && computerMove.equals(SCISSORS) || playerMove.equals(SCISSORS) && computerMove.equals(PAPER)
                 || playerMove.equals(PAPER) && computerMove.equals(ROCK)) {
             System.out.println("Congratulations! You WIN!");
 
@@ -59,5 +59,5 @@ public class RockPaperScissors {
 
     }
 
-    }
+}
 
